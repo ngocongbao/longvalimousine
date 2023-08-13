@@ -20,11 +20,11 @@ const UserPage = () => {
 
   return (
 
-    <Page className="flex flex-col flex-1">
+    <Page className="bg-primary flex-1  ">
       <HeaderSecond />
 
-      <Box className="bg-primary py-2 flex-1 ">
-        <Box className="bg-white rounded-t-3xl py-4 overflow-hidden h-full">
+      <Box >
+        <Box className="bg-white rounded-t-3xl py-4 overflow-hidden h-full ">
           <Box className="box-user1">
             <Box className="!flex gap-[20px]" onClick={() => navigate("/refferal")}>
               <img src={iconinfo} />
@@ -92,7 +92,7 @@ const UserPage = () => {
               <Text>https://www.facebook.com/LongVanLimo</Text>
             </Box>
           </Box>
-          <Text className="text-[#af671a] text-center pt-3">Liên hệ</Text>
+          <Text style={{color:"#af671a",paddingBottom:"30%",textAlign:"center"}}>Liên hệ</Text>
         </Box>
       </Box>
     </Page>

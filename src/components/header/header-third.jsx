@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Header} from "zmp-ui";
-import banner from "../../assets/images/banner.jpg"
 export const HeaderThird = ({ title }) => {
   return (
     <Header
@@ -15,9 +14,7 @@ export const HeaderThird = ({ title }) => {
           {title}
         </Box>
       </Box>
-
     }
-    />
-    
+    />  
   );
 };

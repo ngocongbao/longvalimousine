@@ -24,19 +24,19 @@ const TripPage = () => {
           }}>
             <button
               onClick={() => handleTabSelect('tab1')}
-              className={activeTab === 'tab1' ? 'active bg-white text-amber-600 px-8 h-[40px] rounded-md' : 'px-8'}
+              className={activeTab === 'tab1' ? 'active bg-white text-amber-600 px-6 h-[40px] rounded-md' : 'px-6'}
             >
               Hiện tại
             </button>
             <button
               onClick={() => handleTabSelect('tab2')}
-              className={activeTab === 'tab2' ? 'active bg-white  text-amber-600 px-8 h-[40px] rounded-md' : 'px-8'}
+              className={activeTab === 'tab2' ? 'active bg-white  text-amber-600 px-6 h-[40px] rounded-md' : 'px-6'}
             >
               Đã đi
             </button>
             <button
               onClick={() => handleTabSelect('tab3')}
-              className={activeTab === 'tab3' ? 'active bg-white  text-amber-600 px-8 h-[40px] rounded-md' : 'px-8'}
+              className={activeTab === 'tab3' ? 'active bg-white  text-amber-600 px-6 h-[40px] rounded-md' : 'px-6'}
             >
               Đã hủy
             </button>

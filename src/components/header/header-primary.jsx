@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Header} from "zmp-ui";
-
 export const HeaderPrimary = ({ title }) => {
   return (
     <Header
@@ -15,9 +14,7 @@ export const HeaderPrimary = ({ title }) => {
             {title}
           </Box>
         </Box>
-
       }
     />
-
   );
 };
