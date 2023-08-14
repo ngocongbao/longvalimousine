@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { HeaderPrimary } from "../../components/header/header-primary";
-import { Box, Page } from "zmp-ui";
+import {Page} from "zmp-ui";
 import route from "../../assets/images/route.png"
 const TripPage = () => {
   const [activeTab, setActiveTab] = useState('tab1');
@@ -11,17 +11,9 @@ const TripPage = () => {
   return (
     <Page className="flex flex-col flex-1 ">
       <HeaderPrimary title="Chuyến của tôi" />
-      <Box className="bg-primary py-2 flex-1 ">
-        <Box className="bg-white rounded-t-3xl py-4 overflow-hidden h-full">
-          <Box className="" style={{
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            background: "#FFEEDA",
-            padding: "5px",
-            margin: "20px",
-            borderRadius:"10px"
-          }}>
+      <div className="bg-primary py-2 flex-1 ">
+        <div className="bg-white rounded-t-3xl py-4 overflow-hidden h-full">
+          <div className=" flex justify-around items-center bg-[#FFEEDA] p-1 m-5 rounded-xl">
             <button
               onClick={() => handleTabSelect('tab1')}
               className={activeTab === 'tab1' ? 'active bg-white text-amber-600 px-6 h-[40px] rounded-md' : 'px-6'}
@@ -40,29 +32,29 @@ const TripPage = () => {
             >
               Đã hủy
             </button>
-          </Box>
-          <Box>
+          </div>
+          <div>
             {
-              activeTab === 'tab1' && <Box style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",marginTop:"50%"}}>
-                <img src={route} width={50} />
+              activeTab === 'tab1' && <div className="flex justify-center items-center flex-col mt-[50%]">
+                <img src={route} className="w-14" />
                 <span>Bạn chưa có </span>
-              </Box>
+              </div>
             }
              {
-              activeTab === 'tab2' && <Box style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",marginTop:"50%"}}>
-                <img src={route} width={50} />
+              activeTab === 'tab2' && <div className="flex justify-center items-center flex-col mt-[50%]">
+                <img src={route} className="w-14" />
                 <span>hành trình nào</span>
-              </Box>
+              </div>
             }
              {
-              activeTab === 'tab3' && <Box style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",marginTop:"50%"}}>
-                <img src={route} width={50} />
+              activeTab === 'tab3' && <div className="flex justify-center items-center flex-col mt-[50%]">
+                <img src={route} className="w-14" />
                 <span>sắp tới</span>
-              </Box>
+              </div>
             }
-          </Box>
-        </Box>
-      </Box>
+          </div>
+        </div>
+      </div>
     </Page>
 
   );

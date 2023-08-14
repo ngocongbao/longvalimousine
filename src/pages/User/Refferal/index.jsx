@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Page,Text} from "zmp-ui"
+import {Page} from "zmp-ui"
 import { HeaderThird } from "../../../components/header/header-third";
 import logo from "../../../assets/images/logo.png"
 import gridview from "../../../assets/images/gridview.png"
@@ -19,219 +19,210 @@ const UserRefferalPage = () => {
   return (
     <Page>
         <HeaderThird title="Giới thiệu nhà xe"/>
-        <Box>
-            <Box style={{
-                 background: "#bc955e",
-                 display: "flex",
-                 justifyContent: "space-between",
-                 alignItems: "center",
-                 height: "50px",
-                 paddingLeft: "5%",
-                 paddingRight: "5%",
-                 marginTop: "2px",
-                
-            }} >
-                <img src={logo}  style={{ width: "40%" }}/>
+        <div>
+            <div className='bg-[#bc955e] flex justify-between items-center h-[50px] px-3 mt-1'>
+                <img src={logo}  className='w-1/3'/>
                 <img src={gridview}/>
-            </Box>
-            <Box>
-                <Box  style={{padding:"30px 10px" }}>
-                  <img src={banner2} style={{borderRadius:"20px"}}/>
-                </Box>
-                 <Box>
-                  <Box style={{display:"flex"}}>
-                    <img src={logolongvan} style={{width:"10%"}}/>
-                    <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px"}}>Long Vân Limousine</h1>
-                  </Box>
-                  <Box>
-                    <Text>Long Vân Limousine là một trong những Tập Đoàn Vận Tải có chất lượng dịch vụ tốt nhất Tây 
+            </div>
+            <div>
+                <div className='py-4 px-2'>
+                  <img src={banner2} className='rounded-xl'/>
+                </div>
+                <div className='px-3'>
+                  <div className='flex'>
+                    <img src={logolongvan} className='w-[10%]'/>
+                    <h1 className='font-bold text-[20px] p-3'>Long Vân Limousine</h1>
+                  </div>
+                  <div>
+                    <p>Long Vân Limousine là một trong những Tập Đoàn Vận Tải có chất lượng dịch vụ tốt nhất Tây 
                       Nguyên và xếp hạng cao ở Việt Nam .Với mong muốn đem đến cho khách hàng những chuyến đi trọn vẹn
                       ,Long Vân không ngừng cải thiện và nâng cao chất lượng dịch vụ một cách tốt nhất
-                    </Text>
-                  </Box>
-                  <Box style={{display:"flex",gap:"10px",paddingTop:"20px"}}>
-                    <img src={icontick} style={{background:"#bc955e",borderRadius:"50%"}}/>
-                    <Text>Hệ thống giường nằm cao cấp ,rộng rãi,êm ái</Text>
-                  </Box>
-                  <Box style={{display:"flex",gap:"10px",paddingTop:"20px"}}>
-                    <img src={icontick} style={{background:"#bc955e",borderRadius:"50%"}}/> 
-                    <Text>Trang thiết bị hiện đại:ghế massage,tivi,wifi,..</Text>
-                  </Box>
-                  <Box style={{display:"flex",gap:"10px",paddingTop:"20px"}}>
-                    <img src={icontick} style={{background:"#bc955e",borderRadius:"50%"}}/>
-                    <Text>Hệ thống đèn giúp bảo vệ mắt và giảm stress</Text>
-                  </Box>
-                  <Box style={{display:"flex",gap:"10px",paddingTop:"20px"}}>
-                    <img src={icontick} style={{background:"#bc955e",borderRadius:"50%"}}/>
-                    <Text>Hệ thống phòng chờ cao cấp</Text>
-                  </Box>
-                  <Box style={{display:"flex",gap:"10px",paddingTop:"20px"}}>
-                    <img src={icontick} style={{background:"#bc955e",borderRadius:"50%"}}/>
-                    <Text>Bác tài dài dặn kinh nghiệm,nhiệt tình ,vui vẻ</Text>
-                  </Box>
-                </Box> 
-                <Box>
-                  <Box style={{display:"flex" }}>
-                      <img src={logolongvan} style={{width:"10%"}}/>
-                      <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px"}}>Tại sao chọn chúng tôi ?</h1>
-                  </Box>
-                  <Box>
-                    <Text>Long Vân Limousine mong muốn đem đến cho quý khách hàng những chuyến xe an toàn,chất lượng nhất
+                    </p>
+                  </div>
+                  <div className='flex gap-2 my-2'>
+                    <img src={icontick} className='bg-[#bc955e] rounded-full'/>
+                    <p>Hệ thống giường nằm cao cấp ,rộng rãi,êm ái</p>
+                  </div>
+                  <div className='flex gap-2 my-2'>
+                    <img src={icontick} className='bg-[#bc955e] rounded-full'/> 
+                    <p>Trang thiết bị hiện đại:ghế massage,tivi,wifi,..</p>
+                  </div>
+                  <div className='flex gap-2 my-2'>
+                    <img src={icontick} className='bg-[#bc955e] rounded-full'/>
+                    <p>Hệ thống đèn giúp bảo vệ mắt và giảm stress</p>
+                  </div>
+                  <div className='flex gap-2 my-2'>
+                    <img src={icontick} className='bg-[#bc955e] rounded-full'/>
+                    <p>Hệ thống phòng chờ cao cấp</p>
+                  </div>
+                  <div className='flex gap-2 my-2'>
+                    <img src={icontick} className='bg-[#bc955e] rounded-full'/>
+                    <p>Bác tài dài dặn kinh nghiệm,nhiệt tình ,vui vẻ</p>
+                  </div>
+                </div> 
+                <div className='flex-1 flex flex-col bg-[#d0d6db] px-3'>
+                  <div className='flex'>
+                      <img src={logolongvan} className='w-[10%]'/>
+                      <h1 className='font-bold p-2 text-[20px]'>Tại sao chọn chúng tôi ?</h1>
+                  </div>
+                  <div>
+                    <p>Long Vân Limousine mong muốn đem đến cho quý khách hàng những chuyến xe an toàn,chất lượng nhất
                       .Vì vật,chúng tôi không ngừng nâng cấp dịch vụ tiện ích.Đến với Long Vân Limousine mỗi chuyến xe là một trải nghiệm tuyệt vời
-                    </Text>
-                    <button style={{display:"block",margin:"20px auto",background:"#bc955e",padding:"10px",color:"white",borderRadius:"10px",fontWeight:"bold"}}> 
+                    </p>
+                    <button className='bg-[#bc955e] block m-auto my-2 p-3 text-white rounded-lg '> 
                      Đặt vé ngay</button>
-                    <Box style={{border:"1px solid black ",borderRadius:"10px",margin:"20px",padding:"5px" }}>
-                      <Box style={{display:"flex"}}>
-                        <img src={icongift} style={{width:"10%"}}/>
-                        <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px",color:"#bc955e"}}>ĐẶT VÉ DỂ DÀNG</h1>
-                      </Box>
-                      <Text>Thao tác đơn giản,đặt vé nhanh chóng chưa đầy 30s</Text>
-                    </Box>
-                    <Box style={{border:"1px solid black ",borderRadius:"10px" ,margin:"20px",padding:"5px"}}>
-                      <Box style={{display:"flex"}}>
-                        <img src={icongift} style={{width:"10%"}}/>
-                        <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px",color:"#bc955e"}}>DỊCH VỤ ĐA DẠNG</h1>
-                      </Box>
-                      <Text>Dịch vụ đa dạng từ vận tải hành khách đến hàng hóa</Text>
-                    </Box>
-                    <Box style={{border:"1px solid black ",borderRadius:"10px" ,margin:"20px",padding:"5px"}}>
-                      <Box style={{display:"flex"}}>
-                        <img src={icongift} style={{width:"10%"}}/>
-                        <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px",color:"#bc955e"}}>PHỤC VỤ CHU ĐÁO</h1>
-                      </Box>
-                      <Text>Tư vấn nhiệt tình,phục vụ tân tâm,dịch vụ chuyên nghiệp</Text>
-                    </Box>
-                    <Box style={{border:"1px solid black ",borderRadius:"10px" ,margin:"20px",padding:"5px"}}>
-                      <Box style={{display:"flex"}}>
-                        <img src={icongift} style={{width:"10%"}}/>
-                        <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px",color:"#bc955e"}}>ƯU ĐÃI NGẬP TRÀN</h1>
-                      </Box>
-                      <Text>Định kì triển khai các chương trình khuyến mãi,đặc biệt là khách hàng thân thiết</Text>
-                    </Box>
-                  </Box>
-                </Box> 
-                 <Box style={{background:"#3A4E57",padding:"20px"}}>
-                  <Box style={{border:"1px solid white",borderRadius:"10px",padding:"10px"}}>
-                    <Box style={{display:"flex"}}>
-                      <img src={logolongvan} style={{width:"10%"}}/>
-                      <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px" ,color:"white"}}>Tầm nhìn</h1>
-                    </Box>
-                    <Text style={{color:"white"}}>Long Vân Limousine định hướng phát triển thành một Tập đoàn Vận tải -Thương
+                    <div className='border-2 border-black-500 rounded-lg p-1 my-2'>
+                      <div className='flex'>
+                        <img src={icongift} className='w-[10%]'/>
+                        <h1 className='text-[#bc955e] font-bold text-lg p-[10px]'>ĐẶT VÉ DỂ DÀNG</h1>
+                      </div>
+                      <p>Thao tác đơn giản,đặt vé nhanh chóng chưa đầy 30s</p>
+                    </div>
+                    <div className='border-2 border-black-500 rounded-lg p-1 my-2'>
+                      <div className='flex'>
+                        <img src={icongift} className='w-[10%]'/>
+                        <h1 className='text-[#bc955e] font-bold text-lg p-[10px]'>DỊCH VỤ ĐA DẠNG</h1>
+                      </div>
+                      <p>Dịch vụ đa dạng từ vận tải hành khách đến hàng hóa</p>
+                    </div>
+                    <div className='border-2 border-black-500 rounded-lg p-1 my-2'>
+                      <div className='flex'>
+                        <img src={icongift} className='w-[10%]'/>
+                        <h1 className='text-[#bc955e] font-bold text-lg p-[10px]'>PHỤC VỤ CHU ĐÁO</h1>
+                      </div>
+                      <p>Tư vấn nhiệt tình,phục vụ tân tâm,dịch vụ chuyên nghiệp</p>
+                    </div>
+                    <div className='border-2 border-black-500 rounded-lg p-1 my-2'>
+                      <div className='flex'>
+                        <img src={icongift} className='w-[10%]'/>
+                        <h1 className='text-[#bc955e] font-bold text-lg p-[10px]'>ƯU ĐÃI NGẬP TRÀN</h1>
+                      </div>
+                      <p>Định kì triển khai các chương trình khuyến mãi,đặc biệt là khách hàng thân thiết</p>
+                    </div>
+                  </div>
+                </div> 
+                <div className='bg-[#3A4E57] p-[10px] text-white'>
+                  <div className='border-2 border-white rounded-lg p-[10px] '>
+                    <div className='flex gap-2'>
+                      <img src={logolongvan} className='w-[10%]'/>
+                      <h1 className='font-bold text-xl'>TẦM NHÌN</h1>
+                    </div>
+                    <p >Long Vân Limousine định hướng phát triển thành một Tập đoàn Vận tải -Thương
                      mại Dịch vụ hàng đầu Việt Nam và vươn xa ra khu vực. Không ngừng đổi mới ,sáng tạo để đưa ra các sản phẩm
                      dịch vụ đẳng cấp ,góp phần nâng cao chất lượng cuộc sống của người Việt và nâng tầm vị thế của thương hiệu 
                      Việt trên trường quốc tế  
-                    </Text>
-                  </Box>
-                  <Box  style={{border:"1px solid white",borderRadius:"10px",padding:"10px",marginTop:"10px"}}>
-                    <Box style={{display:"flex"}}>
-                      <img src={logolongvan} style={{width:"10%"}}/>
-                      <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px",color:"white"}}>SỨ MỆNH</h1>
-                    </Box>
-                    <Text style={{color:"white"}}>Long Vân Limousine định hướng phát triển thành 1 Tập đòan Vận tải -Thương mại Dịch vụ hàng đầu Việt Nam và vươn 
+                    </p>
+                  </div>
+                  <div className='border-2 border-white rounded-lg p-[10px] mt-[10px] '>
+                    <div className='flex gap-2'>
+                      <img src={logolongvan} className='w-[10%]'/>
+                      <h1 className='font-bold text-xl'>SỨ MỆNH</h1>
+                    </div>
+                    <p >Long Vân Limousine định hướng phát triển thành 1 Tập đòan Vận tải -Thương mại Dịch vụ hàng đầu Việt Nam và vươn 
                       xa ra khu vực .Không ngừng đổi mới ,sáng tạo để đưa các sản phẩm dịch vụ đẳng cấp ,góp phần nâng cao chất lượng cuộc 
                       sống của người Việt và nâng tầm vị thế của người Việt trên trường quốc tế  
-                    </Text>
-                  </Box>
-                </Box> 
-                 <Box>
-                  <Box style={{border:"1px solid black",margin:"10px",padding:"10px",boxShadow:"8px black",borderRadius:"10px"}}>
-                    <Box style={{paddingBottom:"20px" }} >
-                      <Text style={{color:"#bc955e"}}>150.000+</Text>
-                      <Text style={{fontWeight:"bold"}}>Lượt khách mỗi năm</Text>
-                    </Box>
-                    <Box  style={{paddingBottom:"20px"}}>
-                      <Text style={{color:"#bc955e"}}>05+</Text>
-                      <Text style={{fontWeight:"bold"}}>Hệ thống văn phòng</Text>
-                    </Box>
-                    <Box  style={{paddingBottom:"20px"}}>
-                      <Text style={{color:"#bc955e"}}>450+</Text>
-                      <Text style={{fontWeight:"bold"}}>Chuyến xe mỗi tháng</Text>
-                    </Box>
-                  </Box>
-                  <Box style={{display:"flex",padding:"20px 0px"}}>
-                    <img src={logolongvan} style={{width:"10%"}}/>
-                    <h1 style={{fontWeight:"bold",fontSize:"20px",padding:"10px"}}>Văn phòng chi nhánh</h1>
-                  </Box>
-                   <Box>
-                    <Box >
-                      <Box style={{position:"relative" }} >
-                        <img src={banner2}/>
-                          <Box style={{border:"1px solid gray",borderRadius:"15px 15px 0 0",position:"absolute",left:"0",right:"0",bottom:"-15%",background:"white",height:"15vh" }}>
-                            <Text style={{fontWeight:"bold",textAlign:"center"}}>BÌNH THẠNH - TP.HCM</Text>
-                            <Box style={{display:"flex",justifyContent:"center",alignItems:"center",padding:"10px"}}>
-                              <img src={iconmap}/>
-                              <Text>160 Chu Văn An ,P26 ,Q Bình Thạnh</Text>
-                            </Box>
-                            <Box style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                              <img src={iconcall2}/>
-                              <Text>1900252547-0838499799</Text>
-                            </Box>
-                          </Box>
-                      </Box>
-                    </Box>
-                  </Box> 
-                </Box> 
-            </Box>
-            <Box style={{marginTop:"10vh"}}>
-              <Box>
-                <img src={longvan}/>
-                <span>Công ty TNHH Vận tải Thương mại Long Vân Limousine </span>
-                <span>MST/ĐKKD/QĐTL:6001620751</span>
-                <span>Trụ sở Doanh nghiệp :Số 49 Nguyễn Trãi ,P Thành Công ,Tp.Buôn Ma Thuộc,Đăk Lắk</span>
-              </Box>
-              <Box >
-                <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Đăng kí nhận tin</Text>
+                    </p>
+                  </div>
+                </div> 
+                 <div>
+                  <div className='border-2 border-black m-[10px] p-[10px] rounded-md'>
+                    <div className='pb-5' >
+                      <p className='text-[#bc955e]'>150.000+</p>
+                      <p className='font-bold'>Lượt khách mỗi năm</p>
+                    </div>
+                    <div  className='pb-5'>
+                      <p className='text-[#bc955e]'>05+</p>
+                      <p className='font-bold'>Hệ thống văn phòng</p>
+                    </div>
+                    <div  className='pb-5'>
+                      <p className='text-[#bc955e]'>450+</p>
+                      <p className='font-bold'>Chuyến xe mỗi tháng</p>
+                    </div>
+                  </div>
+                  <div className='flex'>
+                    <img src={logolongvan} className='w-[10%]'/>
+                    <h1 className='font-bold p-2 text-xl'>Văn phòng chi nhánh</h1>
+                  </div>
+                  <div className='relative'>
+                    <div >
+                     <div>
+                      <img src={banner2}/>
+                     </div>
+                     <div className='absolute border-2 border-gray left-0 right-0 rounded-t-xl b-[-20px] h-[40%] p-3'>
+                      <p className='font-bold pb-2'>BÌNH THẠNH - TP.HCM</p>
+                      <div className='flex gap-2 pb-2'>
+                        <img src={iconmap}/>
+                        <p>160 Chu Văn An,P26,Q Bình Thạnh</p>
+                      </div>
+                      <div className='flex gap-2 pb-2'>
+                        <img src={iconcall2}/>
+                        <p>1900252547 - 0838499799</p>
+                      </div>
+                     </div>
+                    </div>
+                  </div> 
+                </div> 
+            </div>
+            <div className='mt-[40%] bg-[#c0c9cf] p-3'>
+              <div>
+                <img src={longvan} className='mb-2'/>
+                <p>Công ty TNHH Vận tải Thương mại Long Vân Limousine </p>
+                <p>MST/ĐKKD/QĐTL:6001620751</p>
+                <p>Trụ sở Doanh nghiệp :Số 49 Nguyễn Trãi ,P Thành Công ,Tp.Buôn Ma Thuộc,Đăk Lắk</p>
+              </div>
+              <div >
+                <p className='font-bold my-2' >Đăng kí nhận tin</p>
                 <label>Email</label>
-                <input type='text' placeholder='"Địa chỉ Email' style={{ padding: "10px", width: "100%", margin: "10px 0", border: "1px solid orange" }} />
-                <button style={{ display: "block", margin: "auto", padding: "10px 30px", background: "#bc955e", color: "white" }}>Gửi</button>
-                <p style={{width:"100%",height:"1px",background:"black",margin:"20px auto"}}></p>
-              </Box>
-              <Box style={{marginTop:"10px"}}>
-                <Box style={{ display: "flex" }}>
+                <input type='text' placeholder='"Địa chỉ Email' className='w-full p-2 ' />
+                <button className='block m-auto bg-[#bc955e] p-3 my-3 text-white'>Gửi</button>
+                <p className='w-full h-[1px] bg-black my-4'></p>
+              </div>
+              <div className='mt-3'>
+                <div className='flex'>
                     <img src={iconcall2} />
                     <p className='pl-3'>1900 25 25 47-  0983 389 779</p>
-                </Box>
-                <Box style={{ display: "flex" }}>
+                </div>
+                <div className='flex'>
                     <img src={iconmail2} />
                     <p className='pl-3'>nhaxelongvanlimousine@gmail.com</p>
-                </Box>
-                <Box style={{ display: "flex" }}>
+                </div>
+                <div className='flex'>
                     <img src={iconmap} className='my-auto' />
                     <p className='pl-3'>Văn phòng BMT:49 Nguyễn Trãi,Thành Công,Tp.BMT</p>
-                </Box>
-                <Box >
-                    <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Về chúng tôi</Text>
+                </div>
+                <div >
+                    <p className='font-bold my-3'>Về chúng tôi</p>
                     <p>Về chúng tôi</p>
                     <p>Tin tức</p>
                     <p>Ưu đãi- Khuyễn mãi</p>
                     <p>Văn phòng chi nhánh</p>
                     <p>Đối tác</p>
                     <p>Liên hệ</p>
-                    </Box>
-                    <Box>
-                        <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Tuyến phổ biến</Text>
-                        <p>Sài Gòn -Đà Lạt</p>
-                        <p>Sài Gòn - Buôn Ma Thuộc</p>
-                        <p>Buôn Ma Thuộc - Sài Gòn</p>
-                        <p>Buôn Ma Thuộc - Gia Nghĩa</p>
-                    </Box>
-                    <Box>
-                        <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Khách hàng</Text>
+                </div>
+                <div>
+                    <p className='font-bold my-3'>Tuyến phổ biến</p>
+                    <p>Sài Gòn -Đà Lạt</p>
+                    <p>Sài Gòn - Buôn Ma Thuộc</p>
+                    <p>Buôn Ma Thuộc - Sài Gòn</p>
+                    <p>Buôn Ma Thuộc - Gia Nghĩa</p>
+                </div>
+                    <div>
+                        <p className='font-bold my-3'>Khách hàng</p>
                         <p>Chính sách đổi trả vé</p>
                         <p>Chính sách thanh toán</p>
-                    </Box>
-              </Box>
-              <Box className='bg-[#29414B] '>
-                  <Text className='text-white text-center'>Copyright @ 2023 VeXeRe & LongVanLimousine -All <br /> Rights Reserved</Text>
+                    </div>
+                </div>
+              </div>   
+              <div className='bg-[#29414B] '>
+                  <p className='text-white text-center'>Copyright @ 2023 VeXeRe & LongVanLimousine -All <br /> Rights Reserved</p>
                   <div className='flex justify-center items-center gap-3 p-4 '>
                       <img src={iconface} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                       <img src={icontiktok} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                       <img src={iconyoutube} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                   </div>
-                </Box>
-            </Box>
-        </Box>
+              </div>
+            
+        </div>
     </Page>
   )
 }

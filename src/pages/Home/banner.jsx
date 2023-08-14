@@ -1,11 +1,11 @@
 import React from "react";
-import { Box } from "zmp-ui";
+
 import banner from "../../assets/images/banner.jpg";
 const Banner = () => {
   return (
-    <Box>
-      <img src={banner}  />
-    </Box>
+    <div>
+      <img src={banner}/>
+    </div>
   );
 };
 export default Banner;

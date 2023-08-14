@@ -27,6 +27,7 @@ const MyApp = () => {
             <Route path="/setting" element={<UseSettingPage></UseSettingPage>}></Route>
             <Route path="/support" element={<UseSupportPage></UseSupportPage>}></Route>
             <Route path="/detail" element={<UseDetailPage></UseDetailPage>}></Route>
+           
           </AnimationRoutes>
           <BottomNavigation />
         </SnackbarProvider>

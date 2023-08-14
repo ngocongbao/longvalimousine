@@ -1,5 +1,4 @@
 import React from 'react'
-import { Box, Text } from 'zmp-ui'
 import { HeaderThird } from '../../../../components/header/header-third'
 import logo from "../../../../assets/images/logo.png"
 import gridview from "../../../../assets/images/gridview.png"
@@ -12,97 +11,92 @@ import icontiktok from "../../../../assets/images/icontiktok.png"
 import iconyoutube from "../../../../assets/images/iconyoutube.png"
 const UseDetailPage = () => {
     return (
-        <Box>
+        <div>
             <HeaderThird title="Chi tiết" />
-            <Box>
-                <Box className='flex flex-1 bg-white flex-col'>
-                    <Box style={{
-                        background: "#bc955e",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        height: "50px",
-                        paddingLeft: "5%",
-                        paddingRight: "5%",
-                        marginTop: "2px"
-                    }} >
-                        <img src={logo} style={{ width: "40%" }} />
+            <div>
+                <div className='flex flex-1 bg-white flex-col'>
+                    <div className='bg-[#bc955e] flex justify-between items-center h-[60px] px-3 mt-1'>
+                        <img src={logo} className='w-1/3' />
                         <img src={gridview} />
-                    </Box>
-                    <Box>
-                        <Box style={{ textAlign: "center", lineHeight: "30px" }}>
-                            <Text style={{ fontWeight: "bold", fontSize: "30px", padding: "20px", lineHeight: "40px" }}>This page could <br /> not be found</Text>
-                            <span>We are sorry .But the page you are looking for is not available</span>
-                            <span> Perhaps you can try a new search</span>
-                        </Box>
-                        <Box style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                            <input type='text' placeholder='Search' style={{ width: "90%", padding: "10px", border: "1px solid gray", borderRadius: "5px",margin:"20px" }} />
-                            <button style={{  padding: "10px", background: "#14AFF1", color: "white" ,marginBottom:"20px"}}>BACK TO HOMEPAGE</button>
-                        </Box>
-                    </Box>
-                </Box>
-                <Box style={{padding:"20px"}}>
-                    <Box >
-                        <img src={longvan} style={{
-                            width: "50%",marginBottom:"20px"
-                        }} />
-                        <span>Công ty TNHH Vận tải Thương mại Long Vân Limousine </span>
-                        <span>MST/ĐKKD/QĐTL:6001620751</span>
-                        <span>Trụ sở Doanh nghiệp :Số 49 Nguyễn Trãi ,P Thành Công ,Tp.Buôn Ma Thuộc,Đăk Lắk</span>
-                    </Box>
-                    <Box >
-                        <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Đăng kí nhận tin</Text>
+                    </div>
+                    <div>
+                        <div className='text-center'>
+                            <p className='font-bold text-[20px] leading-6'>This page could <br /> not be found</p>
+                            <p>We are sorry .But the page you are looking for is not available</p>
+                            <p> Perhaps you can try a new search</p>
+                        </div>
+                        <div className='flex justify-center items-center flex-col'>
+                            <input type='text' placeholder='Search' className='p-2 border border-black-600 w-[90%] m-3'/>
+                            <button className='bg-[#14AFF1] p-3 text-white m-3'>BACK TO HOMEPAGE</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='p-5'>
+                    <div >
+                        <img src={longvan} className='w-1/2 mb-5'/>
+                        <p>Công ty TNHH Vận tải Thương mại Long Vân Limousine </p>
+                        <p>MST/ĐKKD/QĐTL:6001620751</p>
+                        <p>Trụ sở Doanh nghiệp :Số 49 Nguyễn Trãi ,P Thành Công ,Tp.Buôn Ma Thuộc,Đăk Lắk</p>
+                    </div>
+                    <div >
+                        <p className='font-bold py-2'>Đăng kí nhận tin</p>
                         <label>Email</label>
-                        <input type='text' placeholder='"Địa chỉ Email' style={{ padding: "10px", width: "100%", margin: "10px 0", border: "1px solid orange" }} />
-                        <button style={{ display: "block", margin: "auto", padding: "10px 30px", background: "#bc955e", color: "white" }}>Gửi</button>
-                        <p style={{width:"100%",height:"1px",background:"black",margin:"20px auto"}}></p>
-                    </Box>
-                    <Box style={{marginTop:"10px"}}>
-                        <Box style={{ display: "flex" }}>
+                        <input type='text' placeholder='"Địa chỉ Email'className='p-2 border border-orange-600 w-[90%] m-3' />
+                        <button className='bg-[#bc955e] px-5 py-3 block m-auto text-white'>Gửi</button>
+                        <p className='w-full border-2 border-black my-5'></p>
+                    </div>
+                    <div>
+                        <div className='flex'>
                             <img src={iconcall2} />
                             <p className='pl-3'>1900 25 25 47-  0983 389 779</p>
-                        </Box>
-                        <Box style={{ display: "flex" }}>
+                        </div>
+                        <div className='flex'>
                             <img src={iconmail2} />
                             <p className='pl-3'>nhaxelongvanlimousine@gmail.com</p>
-                        </Box>
-                        <Box style={{ display: "flex" }}>
+                        </div>
+                        <div className='flex'>
                             <img src={iconmap} className='my-auto' />
                             <p className='pl-3'>Văn phòng BMT:49 Nguyễn Trãi,Thành Công,Tp.BMT</p>
-                        </Box>
-                    </Box>
-                    <Box >
-                        <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Về chúng tôi</Text>
+                        </div>
+                    </div>
+                    <div >
+                        <p className='font-bold my-3'>Về chúng tôi</p>
+                        <div className='leading-8'>
                         <p>Về chúng tôi</p>
                         <p>Tin tức</p>
                         <p>Ưu đãi- Khuyễn mãi</p>
                         <p>Văn phòng chi nhánh</p>
                         <p>Đối tác</p>
                         <p>Liên hệ</p>
-                    </Box>
-                    <Box>
-                        <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Tuyến phổ biến</Text>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-bold my-3'>Tuyến phổ biến</p>
+                        <div className='leading-8'>
                         <p>Sài Gòn -Đà Lạt</p>
                         <p>Sài Gòn - Buôn Ma Thuộc</p>
                         <p>Buôn Ma Thuộc - Sài Gòn</p>
                         <p>Buôn Ma Thuộc - Gia Nghĩa</p>
-                    </Box>
-                    <Box>
-                        <Text style={{ fontWeight: "bold", margin: "10px 0" }}>Khách hàng</Text>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-bold my-3'>Khách hàng</p>
+                        <div className='leading-8'>
                         <p>Chính sách đổi trả vé</p>
                         <p>Chính sách thanh toán</p>
-                    </Box>
-                </Box>
-                <Box className='bg-[#29414B] '>
-                    <Text className='text-white text-center'>Copyright @ 2023 VeXeRe & LongVanLimousine -All <br /> Rights Reserved</Text>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-[#29414B] '>
+                    <p className='text-white text-center'>Copyright @ 2023 VeXeRe & LongVanLimousine -All <br /> Rights Reserved</p>
                     <div className='flex justify-center items-center gap-3 p-4 '>
                         <img src={iconface} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                         <img src={icontiktok} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                         <img src={iconyoutube} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                     </div>
-                </Box>
-            </Box>
-        </Box>
+                </div>
+            </div>
+        </div>
     )
 }
 

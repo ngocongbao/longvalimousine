@@ -7,31 +7,31 @@ import { useNavigate } from "react-router-dom";
 const UseSupportPage=()=>{
   const navigation =useNavigate();
   return(
-   <Box >
+   <div >
     <HeaderThird title="Hỗ trợ"/>
-    <Box >
-      <Box onClick={()=>navigation('/detail')} style={{display:"flex",justifyContent:"space-between",margin:"10px" ,padding:"10px",borderBottom:"1px solid #B7BEC1 "}}>
-        <Text>Chính sách đổi trả vé</Text>
+    <div >
+      <div onClick={()=>navigation('/detail')} className=" flex justify-between m-[10px] p-[10px] border-b-2 border-[#B7BEC1]">
+        <p>Chính sách đổi trả vé</p>
         <img src={iconback}/>
-      </Box>
-      <Box onClick={()=>navigation('/detail')} style={{display:"flex",justifyContent:"space-between",margin:"10px" ,padding:"10px",borderBottom:"1px solid #B7BEC1"}}>
-        <Text>Chính sách giao nhận vé</Text>
+      </div>
+      <div onClick={()=>navigation('/detail')} className=" flex justify-between m-[10px] p-[10px] border-b-2 border-[#B7BEC1]">
+        <p>Chính sách giao nhận vé</p>
         <img src={iconback}/>
-      </Box>
-      <Box onClick={()=>navigation('/detail')} style={{display:"flex",justifyContent:"space-between",margin:"10px" ,padding:"10px",borderBottom:"1px solid  #B7BEC1"}}>
-        <Text>Chính sách bảo mật thông tin</Text>
+      </div>
+      <div onClick={()=>navigation('/detail')} className=" flex justify-between m-[10px] p-[10px] border-b-2 border-[#B7BEC1]">
+        <p>Chính sách bảo mật thông tin</p>
         <img src={iconback}/>
-      </Box>
-      <Box onClick={()=>navigation('/detail')} style={{display:"flex",justifyContent:"space-between",margin:"10px" ,padding:"10px",borderBottom:"1px solid #B7BEC1"}}>
-        <Text>Hướng dẫn thanh toán</Text>
+      </div>
+      <div onClick={()=>navigation('/detail')} className=" flex justify-between m-[10px] p-[10px] border-b-2 border-[#B7BEC1]">
+        <p>Hướng dẫn thanh toán</p>
         <img src={iconback}/>
-      </Box>
-      <Box onClick={()=>navigation('/detail')} style={{display:"flex",justifyContent:"space-between",margin:"10px" ,padding:"10px",borderBottom:"1px solid #B7BEC1"}}>
-        <Text>Câu hỏi thường gặp</Text>
+      </div>
+      <div onClick={()=>navigation('/detail')} className=" flex justify-between m-[10px] p-[10px] border-b-2 border-[#B7BEC1]">
+        <p>Câu hỏi thường gặp</p>
         <img src={iconback}/>
-      </Box>
-    </Box>
-   </Box>
+      </div>
+    </div>
+   </div>
   )
 }
 export default UseSupportPage
