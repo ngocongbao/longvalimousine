@@ -1,7 +1,9 @@
 
 import React from "react";
 import image from "../../assets/images/imagenews.jpg";
+import { useNavigate } from "react-router-dom";
 const News = () => {
+  const navagation=useNavigate()
   return (
     <div className="h-[60%]" >
       <div className="news">
@@ -9,7 +11,7 @@ const News = () => {
         <h5 className="all_news">Xem tất cả</h5>
       </div>
       <div className="slide_news">
-        <div className="slide">
+        <div className="slide" onClick={()=>navagation('/detailhome')}>
           <img src={image} className="news_img" />
           <h4 className="title">
             LỄ KÍ KẾT HỢP TÁC PHÁT TRIỂN TUYẾN ĐƯỜNG BIỂN MÙA HÈ 2023 VỚI CÁT

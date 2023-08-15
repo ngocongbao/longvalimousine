@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="search">
+    <div className="search ">
       <p>Tìm chuyến đi</p>
     </div>
   );

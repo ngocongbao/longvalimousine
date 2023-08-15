@@ -10,10 +10,7 @@ const Departure = () => {
     <Page className="flex flex-col flex-1 ">
         <img src={banner} />
       <div className="bg-primary flex-1 rounded-t-2xl">
-        <div className=" flex justify-around items-center flex-col ">
-          <div className='py-2 px-4 bg-white rounded-lg text-[#bc955e] '>
-            <button>X</button>
-          </div>
+        <div className=" flex justify-around items-center flex-col overflow-hidden ">
           <input 
             type='text'
             placeholder='Tìm Tỉnh/Thành,Quận/Huyện'

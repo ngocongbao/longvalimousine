@@ -19,12 +19,12 @@ const UserRefferalPage = () => {
   return (
     <Page>
         <HeaderThird title="Giới thiệu nhà xe"/>
-        <div>
+          <div>
             <div className='bg-[#bc955e] flex justify-between items-center h-[50px] px-3 mt-1'>
                 <img src={logo}  className='w-1/3'/>
                 <img src={gridview}/>
             </div>
-            <div>
+          <div>
                 <div className='py-4 px-2'>
                   <img src={banner2} className='rounded-xl'/>
                 </div>
@@ -220,10 +220,9 @@ const UserRefferalPage = () => {
                       <img src={icontiktok} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                       <img src={iconyoutube} className='bg-white p-2 h-[40px] max-w-[40px] rounded-md' />
                   </div>
-              </div>
-            
-        </div>
-    </Page>
+              </div>  
+            </div>
+        </Page>
   )
 }
 
