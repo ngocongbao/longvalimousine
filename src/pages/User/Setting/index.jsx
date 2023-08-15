@@ -6,9 +6,10 @@ import iconbell from "../../../assets/images/bell.png"
 import iconlanguage from "../../../assets/images/iconlanguage.png"
 import iconinfor2 from "../../../assets/images/iconinfor2.png"
 import delaccount from "../../../assets/images/iconacount.png"
+import {Page} from "zmp-ui"
 const UseSettingPage = () => {
   return (
-    <div>
+    <Page className='bg-white flex-1 flex-col'  >
       <HeaderThird title="Cài đặt"/>
       <div className='flex justify-between items-center p-3 border-b-2 border-gray'>
         <div className='flex gap-2'>
@@ -37,7 +38,7 @@ const UseSettingPage = () => {
           <p>Delete account</p>
         </div>
       </div>
-    </div>
+    </Page>
   )
 }
 

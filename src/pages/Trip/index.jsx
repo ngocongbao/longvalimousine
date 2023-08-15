@@ -8,6 +8,7 @@ const TripPage = () => {
   const handleTabSelect = (tabKey) => {
     setActiveTab(tabKey);
   };
+
   return (
     <Page className="flex flex-col flex-1 ">
       <HeaderPrimary title="Chuyến của tôi" />

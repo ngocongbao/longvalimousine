@@ -148,6 +148,7 @@ body {
   position: relative;
   align-items: center;
   margin-top: -50px;
+  
 
   .change {
     display: flex;
@@ -161,6 +162,7 @@ body {
     position: absolute;
     right: 20px;
     align-items: center;
+    z-index: 999;
   }
 
   .icon-list {
@@ -185,6 +187,7 @@ body {
   }
 
   .address-text {
+    z-index: 100;
     margin-left: 20px;
     width: 100%;
 
@@ -193,7 +196,6 @@ body {
       width: 100%;
       border-bottom: 1px solid rgb(197, 193, 193);
       margin-bottom: 10px;
-
       p {
         margin: 0px;
       }
@@ -275,4 +277,8 @@ body {
 
 .zaui-header::after {
   background: none;
+}
+
+#date-picker .zaui-input-group-wrapper.zaui-picker-input.zaui-date-picker {
+  width: 100% !important;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Text, Page } from 'zmp-ui'
+import {  Page } from 'zmp-ui'
 import { HeaderThird } from '../../../components/header/header-third'
 import iconvoucher2 from "../../../assets/images/iconvoucher2.png"
 const UseEndowPage = () => {
