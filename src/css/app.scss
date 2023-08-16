@@ -79,66 +79,6 @@ body {
   width: 100%;
 }
 
-.search {
-  background-color: #b5905b;
-  border-radius: 10px;
-  border: 1px solid rgb(241, 235, 235);
-  margin: 20px;
-  z-index: 999;
-
-  p {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 12px;
-    color: white;
-  }
-}
-
-.slide_news {
-  display: flex;
-  overflow-x: scroll;
-  padding: 10px 20px;
-}
-
-.slide {
-  min-width: 250px;
-  border: 1px solid rgb(216, 212, 212);
-  border-radius: 20px;
-  box-shadow: 2px 2px rgb(236, 232, 232);
-  margin: 5px;
-}
-
-.news_img {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-}
-
-.news {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding-left: 15px;
-  font-weight: bold;
-}
-
-.title_news {
-  width: 100px;
-  padding-left: 30px;
-}
-
-.all_news {
-  width: 100px;
-  color: #b5905b;
-  margin: 0;
-  padding-right: 5px;
-}
-
-.title {
-  padding: 8px;
-  margin: 0px;
-  font-weight: bold;
-}
 
 .box-adderess {
   background-color: white;
@@ -154,7 +94,6 @@ body {
   .change {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 10px;
@@ -228,34 +167,12 @@ body {
   border: 1px solid rgb(241, 235, 235);
   display: flex;
   position: relative;
-
-  .date_1 {
-    padding-left: 40px;
-
-    p {
-      margin: auto;
-    }
-
-    h3 {
-      margin: 0px;
-      font-weight: bold;
-    }
-  }
-
-  .calendar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 10px;
-    border: 1px solid beige;
-    background-color: #855a2d;
-    position: absolute;
-    right: 20px;
-  }
+ 
 }
 
+#date-picker .zaui-input-group-wrapper.zaui-picker-input.zaui-date-picker {
+  width: 100% !important;
+}
 .footer {
   position: fixed;
   bottom: 60px;
@@ -280,6 +197,3 @@ body {
   background: none;
 }
 
-#date-picker .zaui-input-group-wrapper.zaui-picker-input.zaui-date-picker {
-  width: 100% !important;
-}

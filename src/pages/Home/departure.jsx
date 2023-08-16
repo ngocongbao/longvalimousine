@@ -34,17 +34,17 @@ const Departure = () => {
           {
             activeTab==='tab1'&&
             <div className=' p-5 leading-7' >
-              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg'>Hồ Chí Minh</p>
-              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg'>Lâm Đồng</p>
-              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg'>Đăk Lăk</p>
-              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg'>Đăk Nông</p>
-              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg'>Khánh Hòa</p>
+              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg font-bold'>Hồ Chí Minh</p>
+              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg font-bold'>Lâm Đồng</p>
+              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg font-bold'>Đăk Lăk</p>
+              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg font-bold'>Đăk Nông</p>
+              <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg font-bold'>Khánh Hòa</p>
             </div>
           }
           {
             activeTab==='tab2'&&
-            <div>
-            <h1>Hồ Chí Minh</h1>
+            <div  className=' p-5 leading-7' >
+            <p className='hover:text-blue-400 p-3 hover:bg-blue-100 text-center rounded-lg font-bold'>Hồ Chí Minh</p>
             </div>
           }
           </div>
