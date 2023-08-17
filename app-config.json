@@ -1,10 +1,16 @@
 {
   "app": {
-    "title": "RecurseApp",
+    "title": "Long Van Limousine",
     "headerColor": "#1843EF",
     "textColor": "white",
     "statusBarColor": "#1843EF",
-    "leftButton": "back"
+    "leftButton": "back",
+    "textAlign": "left",
+    "actionBarHidden": false,
+    "hideAndroidBottomNavigationBar": false,
+    "hideIOSSafeAreaBottom": false,
+    "selfControlLoading": false,
+    "statusBar": "normal"
   },
   "debug": false,
   "listCSS": [],
@@ -16,5 +22,6 @@
     "/dynamic-route",
     "/about",
     "/404"
-  ]
+  ],
+  "template": {}
 }

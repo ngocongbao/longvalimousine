@@ -11,7 +11,8 @@ import UseEndowPage from "../pages/User/Endow";
 import UseSettingPage from "../pages/User/Setting"
 import UseSupportPage from "../pages/User/Support"
 import UseDetailPage from "../pages/User/Support/Detail.jsx"
-import UseDetailhomePage from "../pages/Home/detailhome"
+import UseDetailnewshome from "../pages/Home/detailnewshome"
+import SearchtripPage from "../pages/Home/searchtrip"
 const MyApp = () => {
   return (
     <BrowserRouter>
@@ -27,7 +28,8 @@ const MyApp = () => {
             <Route path="/setting" element={<UseSettingPage></UseSettingPage>}></Route>
             <Route path="/support" element={<UseSupportPage></UseSupportPage>}></Route>
             <Route path="/detail" element={<UseDetailPage></UseDetailPage>}></Route>
-            <Route path="/detailhome" element={<UseDetailhomePage></UseDetailhomePage>}></Route>
+            <Route path="/detainewslhome" element={<UseDetailnewshome></UseDetailnewshome>}></Route>
+            <Route path="/searchtrip" element={<SearchtripPage></SearchtripPage>}></Route>
           </AnimationRoutes>
           <BottomNavigation />
         </SnackbarProvider>

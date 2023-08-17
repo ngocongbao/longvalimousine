@@ -21,7 +21,7 @@ const axiosClient = () => {
     },
     (error) => {
       Promise.reject(error);
-    }
+    },
   );
 
   axiosOption.interceptors.response.use(
@@ -30,7 +30,7 @@ const axiosClient = () => {
     },
     function (error) {
       throw error;
-    }
+    },
   );
 
   return axiosOption;
