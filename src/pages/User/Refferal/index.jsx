@@ -1,15 +1,11 @@
 import React from "react";
-import { Page } from "zmp-ui";
+import { Icon, Page } from "zmp-ui";
 import { HeaderThird } from "../../../components/header/header-third";
 import logo from "../../../assets/images/logo.png";
-import gridview from "../../../assets/images/gridview.png";
 import banner2 from "../../../assets/images/banner2.jpg";
 import logolongvan from "../../../assets/images/logolongvan.png";
-import icontick from "../../../assets/images/icontick.png";
 import icongift from "../../../assets/images/icongift.png";
 import longvan from "../../../assets/images/longvan.png";
-import iconcall2 from "../../../assets/images/iconcall2.png";
-import iconmap from "../../../assets/images/iconmap.png";
 import iconmail2 from "../../../assets/images/iconmail2.png";
 import iconface from "../../../assets/images/iconfacebook1.png";
 import icontiktok from "../../../assets/images/icontiktok.png";
@@ -22,7 +18,7 @@ const UseRefferalPage = () => {
       <div>
         <div className="bg-[#bc955e] flex justify-between items-center h-[50px] px-3 mt-1">
           <img src={logo} className="w-1/3" />
-          <img src={gridview} />
+          <Icon icon="zi-more-grid" className="text-white"/>
         </div>
         <div>
           <div className="py-4 px-2">
@@ -43,23 +39,23 @@ const UseRefferalPage = () => {
               </p>
             </div>
             <div className="flex gap-2 my-2">
-              <img src={icontick} className="bg-[#bc955e] rounded-full" />
+              <Icon icon="zi-check-circle-solid" className="text-[#bc955e]"/>
               <p>Hệ thống giường nằm cao cấp ,rộng rãi,êm ái</p>
             </div>
             <div className="flex gap-2 my-2">
-              <img src={icontick} className="bg-[#bc955e] rounded-full" />
+            <Icon icon="zi-check-circle-solid" className="text-[#bc955e]"/>
               <p>Trang thiết bị hiện đại:ghế massage,tivi,wifi,..</p>
             </div>
             <div className="flex gap-2 my-2">
-              <img src={icontick} className="bg-[#bc955e] rounded-full" />
+            <Icon icon="zi-check-circle-solid" className="text-[#bc955e]"/>
               <p>Hệ thống đèn giúp bảo vệ mắt và giảm stress</p>
             </div>
             <div className="flex gap-2 my-2">
-              <img src={icontick} className="bg-[#bc955e] rounded-full" />
+            <Icon icon="zi-check-circle-solid" className="text-[#bc955e]"/>
               <p>Hệ thống phòng chờ cao cấp</p>
             </div>
             <div className="flex gap-2 my-2">
-              <img src={icontick} className="bg-[#bc955e] rounded-full" />
+            <Icon icon="zi-check-circle-solid" className="text-[#bc955e]"/>
               <p>Bác tài dài dặn kinh nghiệm,nhiệt tình ,vui vẻ</p>
             </div>
           </div>
@@ -176,11 +172,11 @@ const UseRefferalPage = () => {
                 <div className="absolute border-2 border-gray left-0 right-0 rounded-t-xl b-[-20px] h-[40%] p-3">
                   <p className="font-bold pb-2">BÌNH THẠNH - TP.HCM</p>
                   <div className="flex gap-2 pb-2">
-                    <img src={iconmap} />
+                    <Icon icon="zi-location" className="text-[#bc955e]"/>
                     <p>160 Chu Văn An,P26,Q Bình Thạnh</p>
                   </div>
                   <div className="flex gap-2 pb-2">
-                    <img src={iconcall2} />
+                    <Icon icon="zi-call" className="text-[#bc955e]"/>
                     <p>1900252547 - 0838499799</p>
                   </div>
                 </div>
@@ -213,15 +209,15 @@ const UseRefferalPage = () => {
           </div>
           <div className="mt-3">
             <div className="flex">
-              <img src={iconcall2} />
+              <Icon icon="zi-call" className="text-[#bc955e]"/>
               <p className="pl-3">1900 25 25 47- 0983 389 779</p>
             </div>
             <div className="flex">
               <img src={iconmail2} />
-              <p className="pl-3">nhaxelongvanlimousine@gmail.com</p>
+              <p className="pl-2 ">nhaxelongvanlimousine@gmail.com</p>
             </div>
             <div className="flex">
-              <img src={iconmap} className="my-auto" />
+              <Icon icon="zi-location" className="text-[#bc955e]"/>
               <p className="pl-3">
                 Văn phòng BMT:49 Nguyễn Trãi,Thành Công,Tp.BMT
               </p>

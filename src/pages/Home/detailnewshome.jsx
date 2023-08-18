@@ -1,13 +1,10 @@
 import React from "react";
-import { Page } from "zmp-ui";
+import { Icon, Page } from "zmp-ui";
 import { HeaderThird } from "../../components/header/header-third";
 import logo from "../../assets/images/logo.png";
-import gridview from "../../assets/images/gridview.png";
 import image from "../../assets/images/imagenews.jpg";
 import longvan from "../../assets/images/longvan.png";
-import iconcall2 from "../../assets/images/iconcall2.png";
 import iconmail2 from "../../assets/images/iconmail2.png";
-import iconmap from "../../assets/images/iconmap.png";
 import iconface from "../../assets/images/iconfacebook1.png";
 import icontiktok from "../../assets/images/icontiktok.png";
 import iconyoutube from "../../assets/images/iconyoutube.png";
@@ -18,7 +15,7 @@ const UseDetailnewshome = () => {
       <div>
         <div className="bg-[#bc955e] flex justify-between items-center h-[50px] px-3 mt-1">
           <img src={logo} className="w-1/3" />
-          <img src={gridview} />
+           <Icon icon="zi-more-grid" className="text-white"/>
         </div>
         <div className="mx-3">
           <div>
@@ -78,7 +75,7 @@ const UseDetailnewshome = () => {
         </div>
         <div className="mt-3">
           <div className="flex">
-            <img src={iconcall2} />
+            <Icon icon="zi-call" className="text-[#bc955e]"/>
             <p className="pl-3">1900 25 25 47- 0983 389 779</p>
           </div>
           <div className="flex">
@@ -86,7 +83,7 @@ const UseDetailnewshome = () => {
             <p className="pl-3">nhaxelongvanlimousine@gmail.com</p>
           </div>
           <div className="flex">
-            <img src={iconmap} className="my-auto" />
+            <Icon icon="zi-location" className="text-[#bc955e]"/>
             <p className="pl-3">
               Văn phòng BMT:49 Nguyễn Trãi,Thành Công,Tp.BMT
             </p>

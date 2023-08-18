@@ -102,3 +102,23 @@ body {
     text-align: center;
   }
 }
+.zaui-slider-track-bar{
+  content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #bc955e;
+    border-radius: 8px;
+}
+.zaui-slider-thumb{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #bc955e;
+}
+.zaui-switch:checked {
+  background-color: #bc955e;
+}

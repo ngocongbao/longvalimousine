@@ -1,14 +1,12 @@
 import React from "react";
 import { HeaderThird } from "../../../../components/header/header-third";
 import logo from "../../../../assets/images/logo.png";
-import gridview from "../../../../assets/images/gridview.png";
 import longvan from "../../../../assets/images/longvan.png";
-import iconmap from "../../../../assets/images/iconmap.png";
-import iconcall2 from "../../../../assets/images/iconcall2.png";
 import iconmail2 from "../../../../assets/images/iconmail2.png";
 import iconface from "../../../../assets/images/iconfacebook1.png";
 import icontiktok from "../../../../assets/images/icontiktok.png";
 import iconyoutube from "../../../../assets/images/iconyoutube.png";
+import { Icon } from "zmp-ui";
 const UseDetailPage = () => {
   return (
     <div>
@@ -17,7 +15,7 @@ const UseDetailPage = () => {
         <div className="flex flex-1 bg-white flex-col">
           <div className="bg-[#bc955e] flex justify-between items-center h-[60px] px-3 mt-1">
             <img src={logo} className="w-1/3" />
-            <img src={gridview} />
+            <Icon icon="zi-more-grid" className="text-white"/>
           </div>
           <div>
             <div className="text-center">
@@ -66,7 +64,7 @@ const UseDetailPage = () => {
           </div>
           <div>
             <div className="flex">
-              <img src={iconcall2} />
+              <Icon icon="zi-call" className="text-[#bc955e]"/>
               <p className="pl-3">1900 25 25 47- 0983 389 779</p>
             </div>
             <div className="flex">
@@ -74,7 +72,7 @@ const UseDetailPage = () => {
               <p className="pl-3">nhaxelongvanlimousine@gmail.com</p>
             </div>
             <div className="flex">
-              <img src={iconmap} className="my-auto" />
+              <Icon icon="zi-location" className="text-[#bc955e]"/>
               <p className="pl-3">
                 Văn phòng BMT:49 Nguyễn Trãi,Thành Công,Tp.BMT
               </p>

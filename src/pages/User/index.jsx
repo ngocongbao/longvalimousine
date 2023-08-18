@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-import { Modal, Page } from "zmp-ui";
+import { Icon, Modal, Page } from "zmp-ui";
 import HeaderSecond from "../../components/header/header-second";
-import iconinfo from "../../assets/images/iconinfo.png";
-import iconback from "../../assets/images/iconback.png";
 import iconvoucher from "../../assets/images/iconvoucher.png";
-import iconsetting from "../../assets/images/iconsettings.png";
-import iconhelp from "../../assets/images/iconhelp.png";
-import iconlogout from "../../assets/images/iconlogout.png";
-import iconmap from "../../assets/images/iconmap2.png";
-import iconphone from "../../assets/images/iconcall.png";
 import iconmail from "../../assets/images/iconmail.png";
 import iconweb from "../../assets/images/iconweb.png";
 import iconface from "../../assets/images/iconfacebook.png";
@@ -27,10 +20,10 @@ const UserPage = () => {
               className="!flex gap-[20px]"
               onClick={() => navigate("/refferal")}
             >
-              <img src={iconinfo} />
+              <Icon icon="zi-info-circle" className="text-[#bc955e]"/>
               <p>Giới thiệu nhà xe</p>
             </div>
-            <img src={iconback} className="w-[24px]" />
+              <Icon icon="zi-chevron-right"/>
           </div>
           <div className="bg-[#d9d9d9] my-0 mx-5 rounded-lg">
             <div
@@ -41,27 +34,27 @@ const UserPage = () => {
                 <img src={iconvoucher} />
                 <p>Ưu đãi</p>
               </div>
-              <img src={iconback} className="w-[24px]" />
+              <Icon icon="zi-chevron-right"/>
             </div>
             <div
               className="flex justify-between p-[10px] border-b-gray"
               onClick={() => navigate("/setting")}
             >
               <div className="!flex gap-[20px]">
-                <img src={iconsetting} />
+                <Icon icon="zi-setting" className="text-[#bc955e]"/>
                 <p>Cài đặt</p>
               </div>
-              <img src={iconback} className="w-[24px]" />
+              <Icon icon="zi-chevron-right"/>
             </div>
             <div
               className="flex justify-between p-[10px] border-b-gray"
               onClick={() => navigate("/support")}
             >
               <div className="!flex gap-[20px]">
-                <img src={iconhelp} />
+                <Icon icon="zi-help-circle" className="text-[#bc955e]"/>
                 <p>Hỗ trợ</p>
               </div>
-              <img src={iconback} className="w-[24px]" />
+              <Icon icon="zi-chevron-right"/>
             </div>
             <div
               className="flex justify-between p-[10px] border-b-gray"
@@ -70,7 +63,7 @@ const UserPage = () => {
               }}
             >
               <div className="!flex gap-[20px]">
-                <img src={iconlogout} />
+                <Icon icon="zi-share-external-2" className="text-[#bc955e]" />
                 <p>Đăng xuất</p>
               </div>
             </div>
@@ -105,15 +98,15 @@ const UserPage = () => {
           </div>
           <div>
             <div className="flex gap-5 m-[10px] items-center">
-              <img src={iconmap} className="w-[16px] h-[20px]" />
+              <Icon icon="zi-location"/>
               <p>Văn phòng BMT:49 Nguyễn Trãi ,Thành Công ,Tp.BMT</p>
             </div>
             <div className="flex gap-5 m-[10px] items-center">
-              <img src={iconphone} className="w-[20px]" />
+              <Icon icon="zi-call"/>
               <p>190 025 2547</p>
             </div>
             <div className="flex gap-5 m-[10px] items-center">
-              <img src={iconphone} className="w-[20px]" />
+            <Icon icon="zi-call"/>
               <p>098 338 9779</p>
             </div>
             <div className="flex gap-5 m-[10px] items-center">
