@@ -3,7 +3,7 @@ import { Box, Header } from "zmp-ui";
 export const HeaderThird = ({ title }) => {
   return (
     <Header
-      style={{ background: "#bc955e" }}
+      style={{ background: "#bc955e"}}
       showBackIcon={true}
       title={
         <Box>
