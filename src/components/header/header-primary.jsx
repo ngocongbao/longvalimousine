@@ -1,5 +1,5 @@
 import React from "react";
-import {Header} from "zmp-ui";
+import { Header } from "zmp-ui";
 export const HeaderPrimary = ({ title }) => {
   return (
     <Header
@@ -7,10 +7,7 @@ export const HeaderPrimary = ({ title }) => {
       showBackIcon={false}
       title={
         <div>
-          <div
-            size="normal"
-            className="text-center font-bold text-white"
-          >
+          <div size="normal" className="text-center font-bold text-white">
             {title}
           </div>
         </div>

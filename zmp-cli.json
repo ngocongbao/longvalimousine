@@ -1,6 +1,6 @@
 {
-  "cwd": "C:\\Users\\quanh\\Documents\\recurseapp",
-  "name": "RecurseApp",
+  "cwd": "C:\\Users\\bao.ngocong\\Desktop\\longvanlimousine",
+  "name": "Long Van Limousine",
   "framework": "react",
   "cssPreProcessor": "scss",
   "includeTailwind": true,

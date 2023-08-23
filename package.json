@@ -1,8 +1,8 @@
 {
-  "name": "recurseapp",
+  "name": "longvanlimousine",
   "private": true,
   "version": "1.0.0",
-  "description": "RecurseApp",
+  "description": "longvanlimousine",
   "repository": "",
   "license": "UNLICENSED",
   "browserslist": [
@@ -20,6 +20,7 @@
     "build:css": "postcss src/css/tailwind.css -o src/css/styles.css"
   },
   "dependencies": {
+    "antd": "^5.8.3",
     "axios": "^1.4.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
