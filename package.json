@@ -27,6 +27,7 @@
     "react-router-dom": "^6.14.2",
     "react-tabs": "^6.0.2",
     "recoil": "^0.7.7",
+    "use-query-string": "^2.4.1",
     "zmp-sdk": "^2.28.1",
     "zmp-ui": "^1.8.0"
   },
